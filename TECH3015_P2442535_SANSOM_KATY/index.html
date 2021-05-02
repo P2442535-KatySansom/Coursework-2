@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katy Sansom- Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/suq1vkf.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NAV BAR (sourse from https://www.youtube.com/watch?v=PwWHL3RyQgk- 08/04/21) I adapted by changing the colours, font and button style. The hopes was for the navigation bar to collapse when on a smaller screen size, turning into a hamburger menu. Unfortunately this was not successful as the links would stack on top of each other instead of being hidden until clicking on the icon.  -->
+    <header>
+       <img class="logo" src="Assetts/images/NavImg.gif" alt="Katy Sansom Web Developer">
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#hero">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#testimonials">FEEDBACK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact"><button class="cta" href="#contact">HIRE ME</button></a>
+      <!-- <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>  -->
+    </header>
+    <!-- NAV BAR END -->
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero_container">
+        <div>
+          <h1>LET'S BUILD <span>SOMETHING</span><br>GREAT <span>TOGETHER</span></h1>
+          <h3>I'm a website developer and photographer based in <span>#Essex</span>. I make the visuals and code for websites and mobile applications to reach any target audience.</h3> <!-- the span atribute is to emphasise a point by making it bold, seperating the information from the scentence-->
+          <a class="cta" href="#contact"><button>LET'S TALK</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- HERO END -->
+    <!-- ABOUT -->
+    <section class="about"><!-- This design was taken from themeforest.net-  https://www.pinterest.co.uk/pin/845339792558326708/ -->
+    <div class="about_container" id="about">
+      <div class="about_heading">
+        <h1>ABOUT ME</h1>
+      </div>
+      <div class="row">
+        <div class="column" style="background-color: #f8f8f8; padding-top: 30px; padding-left: 10vw; padding-right: 1vw;">
+          <h2>WHO <span>AM I?</span></h2>
+          <p>Hi, my name is Katy Sansom. I am a website developer from Essex, studying Media Production at De Montfort University. I have an interest in using different forms of media to create and advertise products and services. <br> Having almost completed my final year at university I started work experience with a company in Leicester. This had lead to more experience in my field of interest and has enabled me to continue with this company to become a Digital Marketing Assistant when I graduate. <br> In the future I hope to travel the world and make a positive change along the way, this involves wanting to volunteer to build housing and give support in education for those who do not have access to suitable educational facilities.</p>
+          <a class="cta" href="Assetts/cv.pdf" target="_blank"><button type="button" name="button">DOWNLOAD MY CV</button></a> <!--This redirects the user to a seperate tab where my cv is available-->
+        </div>
+        <div class="column" style="background-color: #f8f8f8; padding-top: 30px; padding-right: 10vw;">
+          <h2>SKILLS <span>IN</span></h2>
+          <p>These are some of my skills in website development, graphic design and photography. </p>
+          <!-- SKILLS BAR (source from https://www.youtube.com/watch?v=bvUMzFMiIbk- 08/04/21) -->
+           <div class="container">
+            <div class="bar front expert" data-skill="HTML"></div>
+            <div class="bar front advanced" data-skill="CSS"></div>
+            <div class="bar back intermediate" data-skill="JAVASCRIPT"></div>
+            <div class=" bar back basic" data-skill="GRAPHIC DESIGN"></div>
+            <div class="bar learning" data-skill="PHOTOGRAPHY"></div>
+          </div>
+
+      </div>
+    </div>
+    <div class="row2">
+      <!-- this area contains a card split into sections explaining education and work experience which has an animation to increase scale and shadow size when hovered over -->
+      <div class="column2" style="background-color: #f8f8f8; padding-top: 50px; padding-left: 10vw; padding-right: 1vw; height:auto;">
+        <h2><span>EDU</span>CATION</h2>
+          <div class="card">
+            <div class="container">
+              <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2018-2021</h5>
+                  <h4>DE MONTFORT UNIVERSITY</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>MEDIA PRODUCTION</h4>
+                  <p>I have studied Media Production with a keen interest in multimedia, entrepreneurship and photography. I was also trained in social media content management, audio and radio production, along with TV and video production. </p>
+                </div>
+              </div>
+              <hr class="solid">
+              <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2016-2018</h5>
+                  <h4>SOUTH ESSEX COLLEGE</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>BROADCAST MEDIA</h4>
+                  <p>During my time at college I was introduced to: photography, videography, radio, TV production, journalism and advertising. I took a very big liking to TV production and journailsm. I left college with a D*D*D, one of the top grades in my class.  </p>
+                </div>
+              </div>
+              <hr class="solid">
+              <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2011-2016</h5>
+                  <h4>THE BROMFORDS SCHOOL</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>GCSE</h4>
+                  <p>Having left with 5 GCES grades C and above.  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="column2" style="background-color: #f8f8f8; padding-top: 50px; padding-right: 5vw; height:auto;">
+            <h2><span>EX</span>PERIENCE</h2>
+              <div class="card">
+                <div class="container">
+                  <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2021-ONGOING</h5>
+                  <h4>MOCHA MARKETING</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>WORK EXPERIENCE</h4>
+                  <p>Durning my work experience I was tasked with creating a website for a client, learning how a marketing company uses a blend of techniques to help B2B and B2C projects get their intended outcome. This was valuable work experience which helped me improve my design techniques and get insight into how a media company runs. </p>
+                </div>
+              </div>
+              <hr class="solid">
+              <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2018-2020</h5>
+                  <h4>FREELANCE</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>WEBSITES/ PHOTOGRAPHY</h4>
+                  <p>During my time at university I was able to gain expeirence by doing photoshoots for friends to use on social media. I also spent time designing and prototyping websites  </p>
+                </div>
+              </div>
+              <hr class="solid">
+              <div class="row3">
+                <div class="column3" style="background-color:#fff;">
+                  <h5>2017</h5>
+                  <h4>ELLE MEDIA GROUP</h4>
+                </div>
+                <div class="column3" style="background-color:#fff;">
+                  <h4>WORK EXPERIENCE</h4>
+                  <p>I spent several weeks doing work experience in a graphic design company who created seasonal cards for clients. During this time I was shown the step by step process from pre-production to distribution.  </p>
+                </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <!-- ABOUT END -->
+    <!-- SERVICES -->
+<!-- simple card design to hold information and icons in with an image background. -->
+    <section class="services" id="services">
+      <div class="services_container">
+          <div class="services_heading">
+            <h1>WHAT I DO</h1>
+          </div>
+          <div class="services_content">
+            <div class="cards">
+              <div class="card2"><h3><i class="fas fa-code"></i>  WEB <span>DESIGN</span> & <span>UI</span></h3><br><p>All projects must start with how it is going to look and feel. From the text and button size to the images, fornts and colours. All of this needs careful planning, so I design and create the prototypes for and form of website application for graphic with users in mind. </p></div>
+              <div class="card2"><h3><i class="fas fa-vector-square"></i>  USER <span>FLOW</span> & <span>UX</span></h3><br><p>When the design in created a look into the user experience is a must have. All websites should flow, if its not a smooth and simple process for a user to navigate then things must me changed. </p></div>
+              <div class="card2"><h3><i class="fas fa-paint-brush"></i>  GRAPHIC <span>DESIGN</span></h3><br><p>Graphic design plays a crutial part in how a viewer interprets what they are seeing. Be it for websites or social media, graphics are everything. So I sue all Adobe softwares and Canva to design these elements.  </p></div>
+              <div class="card2"><h3><i class="fas fa-mobile-alt"></i>  MOBILE <span>APP</span> DESIGN</h3><br><p>A website should be mobile responsive, but with mobile interfaces changing rapidly this can be hard to manage. That is why all content is designed with mobiles in mind.  </p></div>
+              <div class="card2"><h3><i class="fas fa-hashtag"></i>  <span>SOCIAL MEDIA</span> CONTENT</h3><br><p>Planning, implementing, managing and monitoring a company's social media strategy in order to increase brand awareness, improve marketing efforts and increase sales.</p></div>
+              <div class="card2"><h3><i class="fas fa-camera-retro"></i>  <span>PHOTOS</span> & VIDEOS</h3><br><p>I have an interest in taking photos and videos of cars and products in particular. Although during my final year at university, a new project in macro-photography evolved into enjoying photographing textures.  </p></div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- SERVICES END -->
+
+
+    <!-- PAST WORK -->
+    <section class="works" id="works">
+      <div class="works_container">
+          <div class="works_heading">
+            <h1>MY FAVOURITE WORKS</h1>
+          </div>
+          <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="Macro">MACRO</span>
+        <span class="item" data-name="Lego">LEGO</span>
+        <span class="item" data-name="Product">PRODUCT</span>
+        <span class="item" data-name="Other">OTHER</span>
+      </div>
+    </nav>
+    <!-- GALLERY (https://dev.to/codingnepal/responsive-filterable-image-gallery-using-html-css-javascript-36cp- 08/04/21) -->
+    <!-- this area contains all of the image in a simple grid formation which animates whilst hovering over an image -->
+          <div class="gallery">
+            <div class="image" data-name="Other"><span><img src="Assetts/images/IMG_2380.edited.jpg" alt=""></span></div>
+            <div class="image" data-name="Product"><span><img src="Assetts/images/IMG_2213.edited.jpg" alt=""></span></div>
+            <div class="image" data-name="Macro"><span><img src="Assetts/images/IMG_2488.JPG" alt=""></span></div>
+            <div class="image" data-name="Lego"><span><img src="Assetts/images/IMG_2240.edit.jpg" alt=""></span></div>
+            <div class="image" data-name="Product"><span><img src="Assetts/images/IMG_2455.edited.jpg" alt=""></span></div>
+            <div class="image" data-name="Lego"><span><img src="Assetts/images/IMG_2298edit3.jpg" alt=""></span></div>
+            <div class="image" data-name="Lego"><span><img src="Assetts/images/IMG_2269.edited.jpg" alt=""></span></div>
+            <div class="image" data-name="Macro"><span><img src="Assetts/images/IMG_2492.JPG" alt=""></span></div>
+          </div>
+        </div>
+  <!-- fullscreen img preview box -->
+  <!-- this causes the image to go full screen when clicked on -->
+            <div class="preview-box">
+              <div class="details">
+                <span class="title">Image Category: <p></p></span>
+                <span class="icon fas fa-times"></span>
+              </div>
+              <div class="image-box"><img src="" alt=""></div>
+            </div>
+            <div class="shadow"></div>
+          </div>
+
+          <!-- Past websites, for this area I used a tutorial on youtube https://youtu.be/XRzAZBPp5iQ. I slightly changed the design to fit my website -->
+          <!-- this area holds two blog style posts with an image of the website home screens, information on the websites and links to the websites -->
+          <div class="blog-post">
+            <div class="blog-post_img">
+              <img src="Assetts/images/manor.PNG" alt="">
+            </div>
+            <div class="blog-post_info">
+              <div class="blog-post_date">
+                <span>Website</span>
+                <span>2021</span>
+              </div>
+              <h1 class="blog-post_title">Manor Digital</h1>
+              <p class="blog-post_text">As part of my work experience with Mocha Communicates, I was tasked with making a single page B2B website for a client, being given one day to complete the task. They game me limited information to create the website with as the task was aimed at testing my creative skills. This was a fun simple website to make with no planning, simple animations and full creative control. </p>
+              <a href="https://manordigital.webflow.io/" target="_blank" class="blog-post_cta">Visit Website</a>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div class="blog-post_img">
+              <img src="Assetts/images/prodPhysio.PNG" alt="">
+            </div>
+            <div class="blog-post_info">
+              <div class="blog-post_date">
+                <span>Website</span>
+                <span>2021</span>
+              </div>
+              <h1 class="blog-post_title">Production Physiotherapy</h1>
+              <p class="blog-post_text">I must admit, this is the website I have enjoyed creating the most. Whilst doing work expereince with Mocha, I had the oppertunity to complete a start to finish project. From planning to publishing I was involved with creating a website that was selling a service. This project pushed all of my skills; gaining first hand experience with designing a website, organising content to be included, adding animations and SEO. </p>
+              <a href="https://production-physio.webflow.io/" target="_blank" class="blog-post_cta">Visit Website</a>
+            </div>
+          </div>
+    </section>
+    <!-- PAST WORK END -->
+
+
+    <!-- TESTIMONIALS  (https://codepen.io/mark_sottek/pen/mJdByp accessed 14/04/21)-->
+    <!-- this is a bubble with a quote inside and the client name beneath the bubble  -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials_container">
+        <h1>Testimonials</h1>
+        <section class="quotes">
+  <div class="bubble">
+    <blockquote>Katy is a very hard working and creative individual. Having known her for a very long time I can see how quickly she learns new skills and how much effort she puts into all of her work.
+ </blockquote>
+    <div></div>
+    <cite> Danny Baxter</cite> </div>
+  </section>
+  </div>
+    </section>
+    <!-- TESTIMONIALS END -->
+
+    <!-- CONTACT START (https://youtu.be/cfjepC7aITs accessed 14/04/21) -->
+    <!-- this area contains all of the contact detail information and links to social media -->
+    <section class="contact" id="contact">
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h1>Contact Info</h1>
+          <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+          <p>07814 185182</p>
+          <h2><i class="fa fa-envelope" aria-hidden="true"></i>Email</h2>
+          <p>katymssansom@gmail.com</p>
+          <h2><i class="fa fa-map-marker" aria-hidden="true"></i>Address</h2>
+          <p>Wickford, Essex, SS120LZ</p>
+          <ul>
+            <li><a href="https://en-gb.facebook.com/katy.sansom.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/sansomkaty" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/katy-sansom-web-developer/" target="_blank"><i class="fa fa-linkedin-in" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+
+          <!-- this area contains the contact form which redirects to a success or error page when completed and sends a message to the host when filled in. The contact form is hosted by Form Spree-->
+        <h1>Send a Message</h1>
+
+        <form action="https://formspree.io/f/mdoynagn" method="POST" id="my-form">
+          <div class="form-group">
+            <label for="firstName"></label>
+            <input type="text" type="text" class="contact-info-input" placeholder="First Name" name="firstName" id="firstName">
+          </div>
+          <div class="form-group">
+            <label for="lastName"></label>
+            <input type="text" class="contact-info-input" placeholder="Last Name" name="lastName" id="lastName">
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" class="contact-info-input" placeholder="Email" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea name="message" class="contact-info-input" placeholder="Your Message" id="message" rows="5" cols="30"></textarea>
+          </div>
+          <button class="contact-info-btn" type="submit">Submit</button>
+        </form>
+        </div>
+        <!-- this area contains an API of a map form Google Maps -->
+        <div class="contact-info">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19821.87008565658!2d0.5091578957168105!3d51.60976669890151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8c24cc5f0d79b%3A0xf41f61c07e6cbc63!2sWickford!5e0!3m2!1sen!2suk!4v1618401068886!5m2!1sen!2suk" width="100" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT END -->
+
+
+
+<script src="script.js"></script>
+  </body>
+</html>
