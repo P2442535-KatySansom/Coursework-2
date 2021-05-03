@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
   </head>
   <body>
-    <!-- NAV BAR (sourse from https://www.youtube.com/watch?v=PwWHL3RyQgk- 08/04/21) I adapted by changing the colours, font and button style. The hopes was for the navigation bar to collapse when on a smaller screen size, turning into a hamburger menu. Unfortunately this was not successful as the links would stack on top of each other instead of being hidden until clicking on the icon.  -->
-    <header>
+    <!-- old NAV BAR (sourse from https://www.youtube.com/watch?v=PwWHL3RyQgk- 08/04/21) I adapted by changing the colours, font and button style. The hopes was for the navigation bar to collapse when on a smaller screen size, turning into a hamburger menu. Unfortunately this was not successful as the links would stack on top of each other instead of being hidden until clicking on the icon.  -->
+    <!-- <header>
        <img class="logo" src="Assetts/images/NavImg.gif" alt="Katy Sansom Web Developer">
       <nav>
         <ul class="nav__links">
@@ -27,10 +27,35 @@
       <!-- <div class="btn">
         <i class="fas fa-bars menu-btn"></i>
       </div>  -->
-    </header>
+    <!-- </header> -->
+
     <!-- NAV BAR END -->
     <!-- HERO -->
+    <!-- new navigation area taken from  https://www.w3jar.com/editor/?fname=css-responsive-navigation-menu. I am dissapointed i had to get rid of the old nav bar as it was designed exactly how i had imagined but after the user testing showing it as an issue i had to change it-->
     <section class="hero" id="hero">
+      <div class="container_nav">
+      <div class="logo">
+          <a href="#hero"><img src="Assetts\images\NavImg.gif" alt="logo"></a>
+      </div>
+  <div class="navbar">
+
+  <div class="icon-bar" onclick="Show()">
+      <i></i>
+      <i></i>
+      <i></i>
+  </div>
+
+  <ul id="nav-lists">
+      <li class="close"><span onclick="Hide()">×</span></li>
+      <li><a href="#about">ABOUT ME</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#testimonials">TESTIMONIAL</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+  </ul>
+
+  </div>
+  </div>
       <div class="hero_container">
         <div>
           <h1>LET'S BUILD <span>SOMETHING</span><br>GREAT <span>TOGETHER</span></h1>
@@ -237,7 +262,7 @@
                 <span>Website</span>
                 <span>2021</span>
               </div>
-              <h1 class="blog-post_title">Production Physiotherapy</h1>
+              <h1 class="blog-post_title">Production Physio</h1>
               <p class="blog-post_text">I must admit, this is the website I have enjoyed creating the most. Whilst doing work expereince with Mocha, I had the oppertunity to complete a start to finish project. From planning to publishing I was involved with creating a website that was selling a service. This project pushed all of my skills; gaining first hand experience with designing a website, organising content to be included, adding animations and SEO. </p>
               <a href="https://production-physio.webflow.io/" target="_blank" class="blog-post_cta">Visit Website</a>
             </div>
@@ -316,5 +341,16 @@
 
 
 <script src="script.js"></script>
+<script>
+// script for nav bar
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+</script>
   </body>
 </html>
