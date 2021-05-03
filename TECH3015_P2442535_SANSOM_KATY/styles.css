@@ -185,7 +185,7 @@ button:hover{
       .hero_container{
         width: 70vw;
         height: 100%;
-        padding-top: 15vh;
+        padding-top: 10vh;
         padding-left: 10vw;
       }
       .hero_container h1{
@@ -200,7 +200,7 @@ button:hover{
         font-size: 30px;
       }
       }
-      @media screen and (max-width:350px) {
+      @media screen and (max-width:400px) {
         .hero  {
           width: 100vw;
           height: 90vh;
@@ -212,7 +212,7 @@ button:hover{
         .hero_container{
           width: 70vw;
           height: 100%;
-          padding-top: 15vh;
+          padding-top: 5vh;
           padding-left: 10vw;
         }
         .hero_container h1{
@@ -304,9 +304,22 @@ button:hover{
   }
   @media screen and (max-width:400px) {
     .column {
-      width: 100%;
-      padding-left: 10vw;
-      padding-right: 10vw;
+      width: 90%;
+      padding-left: 5vw;
+      padding-right: 10px;
+    }
+    .row:after {
+      content: "";
+      display: contents;
+      clear: both;
+      padding-bottom: 45px;
+    }
+  }
+  @media screen and (max-width:350px) {
+    .column {
+      width: 90%;
+      padding-left: 5vw;
+      padding-right: 10px;
     }
     .row:after {
       content: "";
@@ -768,7 +781,7 @@ hr.solid {
     padding: 7px 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wrapper{
     margin: 30px auto;
   }
@@ -781,6 +794,41 @@ hr.solid {
   }
   .gallery .image{
     width: 100%;
+  }
+  .items span{
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #00725d;
+    border-radius: 50px;
+    border: 2px solid #00725d;
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper{
+    margin: 20px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap ;
+    justify-content: center;
+  }
+  nav .items span{
+    margin: auto;
+  }
+  .gallery .image{
+    width: 100%;
+  }
+  .items span{
+    padding: 5px 5px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #00725d;
+    border-radius: 50px;
+    border: 2px solid #00725d;
+    transition: all 0.3s ease;
   }
 }
 /*the website past works area*/
